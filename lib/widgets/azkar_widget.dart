@@ -12,6 +12,7 @@ import '../models/counter_item.dart';
   @override
   Widget build(BuildContext context) {
   return Row(
+    mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
               Container(
                 decoration: BoxDecoration(

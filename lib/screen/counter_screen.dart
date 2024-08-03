@@ -31,34 +31,36 @@ class CounterScreen extends StatelessWidget {
             children: [
               const ImageWidget(),
               SizedBox(height: 10,),
-              ElevatedButton(
-                child:
-                Wrap(
-                  children: <Widget>[
-                    Icon(
-                      Icons.favorite,
-                      color: Colors.blue.shade700,
-                      size: 20.0,
-                    ),
-                    const Text(
-                      "سُبْحَتِي" ,
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontFamily: 'cross origin',
-                      ),
-                    ),
-                    const SizedBox(width:10,),
 
-                  ],
-                ),
+                  ElevatedButton(
+                    child:
+                    Wrap(
+                      children: <Widget>[
+                        Icon(
+                          Icons.favorite,
+                          color: Colors.blue.shade700,
+                          size: 20.0,
+                        ),
+                        const Text(
+                          "سُبْحَتِي" ,
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: 'cross origin',
+                          ),
+                        ),
+                        const SizedBox(width:10,),
 
-                onPressed: (){
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context)=> const MYList()));
-                },
-              ),
+                      ],
+                    ),
+
+                    onPressed: (){
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context)=> const MYList()));
+                      },
+                  ),
+
             ],
           )
       ),
