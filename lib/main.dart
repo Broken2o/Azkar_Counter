@@ -1,4 +1,4 @@
-import 'package:Azkar_Counter/screen/counter_screen.dart';
+import 'package:Azkar_Counter/screen/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -7,15 +7,12 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
-
-
   @override
   Widget build (BuildContext context) {
     return  MaterialApp(
       theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
-      home: CounterScreen(),
+      home: HomeScreen(),
     );
   }
 }
